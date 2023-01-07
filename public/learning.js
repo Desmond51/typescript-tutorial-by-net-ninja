@@ -46,3 +46,9 @@ const bigBoy = (y, f) => {
 let goodEng = bigBoy(4, 8);
 goodEng = '49';
 console.log(goodEng);
+const look = (uid, item) => {
+    console.log(`${item} has a  uid of ${uid}`);
+};
+const brian = (user) => {
+    console.log(`${user.name} is not logged in`);
+};

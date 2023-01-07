@@ -53,3 +53,15 @@ const bigBoy = (y:number, f:number):string|number=>{
 let goodEng = bigBoy(4,8);
 goodEng = '49'
 console.log(goodEng)
+
+// Type aliases
+type strOrNum = string | number;
+type objWithName = {name:string, uid:strOrNum} 
+
+const look = (uid:strOrNum, item:string)=>{
+    console.log(`${item} has a  uid of ${uid}`)
+}
+
+const brian = (user:objWithName)=>{
+    console.log(`${user.name} is not logged in`)
+}
