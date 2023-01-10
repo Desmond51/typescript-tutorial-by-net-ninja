@@ -54,3 +54,8 @@ const bigMe:Resource<number[]> = {
 }
 
 console.log(bigMe)
+
+// Tuples 
+let student: [string, number] = ['Dezy', 30];
+student[0]= 'Brian';
+console.log(student)

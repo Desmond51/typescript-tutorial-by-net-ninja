@@ -42,3 +42,7 @@ const bigMe = {
     data: [2, 45]
 };
 console.log(bigMe);
+// Tuples 
+let student = ['Dezy', 30];
+student[0] = 'Brian';
+console.log(student);
