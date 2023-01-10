@@ -31,6 +31,7 @@ form.addEventListener('submit',(e: Event)=>{
 })
 
 // Generics
+
 const addUID  = <T extends {name:string}>(obj:T)=>{
 let uid = Math.floor(Math.random() * 100);
 return {...obj, uid};
@@ -40,13 +41,14 @@ let docOne = addUID({name:'Dezy', age:25});
 console.log(docOne.age);
 // let docTwo = addUID({})
 
+enum nameID {'Desmond', 'Randolf', 'Javis', 'Brian'}
 interface Resource<T>{
-    name: string;
+    name: nameID;
     age:number;
     data:T
 }
 const bigMe:Resource<number[]> = {
-    name: "Desmond",
+    name:nameID.Brian,
     age: 25,
     data: [2,45]
 }

@@ -28,8 +28,16 @@ const addUID = (obj) => {
 };
 let docOne = addUID({ name: 'Dezy', age: 25 });
 console.log(docOne.age);
+// let docTwo = addUID({})
+var nameID;
+(function (nameID) {
+    nameID[nameID["Desmond"] = 0] = "Desmond";
+    nameID[nameID["Randolf"] = 1] = "Randolf";
+    nameID[nameID["Javis"] = 2] = "Javis";
+    nameID[nameID["Brian"] = 3] = "Brian";
+})(nameID || (nameID = {}));
 const bigMe = {
-    name: "Desmond",
+    name: nameID.Brian,
     age: 25,
     data: [2, 45]
 };
