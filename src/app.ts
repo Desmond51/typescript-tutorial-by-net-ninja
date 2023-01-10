@@ -30,5 +30,25 @@ form.addEventListener('submit',(e: Event)=>{
     list.render(doc, type.value, 'end');
 })
 
+// Generics
+const addUID  = <T extends {name:string}>(obj:T)=>{
+let uid = Math.floor(Math.random() * 100);
+return {...obj, uid};
+}
 
+let docOne = addUID({name:'Dezy', age:25});
+console.log(docOne.age);
+// let docTwo = addUID({})
 
+interface Resource<T>{
+    name: string;
+    age:number;
+    data:T
+}
+const bigMe:Resource<number[]> = {
+    name: "Desmond",
+    age: 25,
+    data: [2,45]
+}
+
+console.log(bigMe)
