@@ -24,7 +24,7 @@
  function isPositive(n){
     return n % 2 === 0;
  }
- console.log(arrFilter)
+//  console.log(arrFilter)
 // const arr1=arr.fill(2)
 // // console.log(arr1)
 
@@ -56,4 +56,12 @@ const persons = [
 
 const bigAge= persons.filter(person => person.age >=27)
 
-console.log(bigAge)
+// console.log(bigAge)
+
+const numbers= [1,2,3,4,5,56];
+const deleted = numbers.splice(2,0,79,0,-9);
+
+console.log(numbers)
+console.log(deleted)
+
+// console.clear()
